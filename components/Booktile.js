@@ -8,18 +8,44 @@ const Booktile = props => {
                 <Text style={styles.tileHeader}>{props.title}</Text>
                 <Text style={styles.tileSub}>{props.Subtitle}</Text>
                 <Text style={styles.tileText}>{props.Texttitle}</Text>
-                <View style={styles.tileISBN}>
-
-                    <Text> {props.ISBNtext}</Text>
+                <Text style={styles.tileISBN}>{props.ISBNtext}</Text>
                     <TouchableNativeFeedback>
                         <View>
                             <Text style={styles.button}>READ</Text>
                         </View>
                     </TouchableNativeFeedback>
-                </View>
-
             </View>
         </View>
     )
 }  // => staat voor u functon en je curcly brasses zijn u argumentenlijst
 // dit is een functie die een naam returnd, onze component word weergegeven.
+
+export default Booktile;
+
+const styles = StyleSheet.create({
+    tile: {
+      flexBasis: '46%',//200
+      borderRadius: 5,
+      borderColor: '#B4B8DA',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      marginVertical: '2%',
+  
+    },
+    tileImage: {
+      width: '100%',
+      maxHeight: 110,
+      overflow: 'hidden',
+    },
+    tileDetail: {
+      padding: 10,
+    },
+    tileHeader: {
+      fontSize: 22,
+      fontWeight: '600',
+    },
+    tileText: {
+      fontSize: 16,
+      fontWeight: '500',
+    }
+  });
