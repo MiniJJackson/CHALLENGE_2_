@@ -6,9 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Booktile title="test Title" subtitle="Subtitel Test" texttitle="" />
-      <Booktile title="Ontwerpen 2" subtitle="YP0629" />
-      <Booktile title="Communicatie 3" subtitle="YP0535" />
-      <Booktile title="Communicatie 3" subtitle="YP0535" />
+    
       <StatusBar style="auto" />
     </View>
   );
