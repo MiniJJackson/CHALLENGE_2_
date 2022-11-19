@@ -20,13 +20,21 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#B7E9F7',
+    //alignItems: 'center',
+    //justifyContent: 'center',
   },
   headingTitle: {
     flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    flexGrow: 0,
+    flexShrink: 0,
+    justifyContent: 'space-evenly',
+    
+    backgroundColor: "#fff",
     alignItems: 'center',
     justifyContent: 'center',
+    maxHeight: '50px',
   },
 });
