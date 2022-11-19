@@ -5,8 +5,13 @@ import Booktile from './components/Booktile.js';
 export default function App() {
   return (
     <View style={styles.container}>
+      <View style={styles.headingTitle}>
+        <Text>Bookshop</Text>
+        <Text>CART</Text>
+      </View>
       <Booktile title="test Title" subtitle="Subtitel Test" texttitle="" />
-    
+      <Booktile title="test TEST" subtitle="Subtitel Test" texttitle="" />
+
       <StatusBar style="auto" />
     </View>
   );
@@ -14,8 +19,13 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    //flex: 1,
-    backgroundColor: '#fff',
+    flex: 1,
+    backgroundColor: '#000',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  headingTitle: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
