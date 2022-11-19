@@ -9,8 +9,8 @@ export default function App() {
         <Text>Bookshop</Text>
         <Text>CART</Text>
       </View>
-      <Booktile title="test Title" subtitle="Subtitel Test" texttitle="" />
-      <Booktile title="test TEST" subtitle="Subtitel Test" texttitle="" />
+      <Booktile title="Book title 1" Subtitle="by Lorem Lorem It" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam vestibulum morbi blandit cursus risus at. Leo a diam sollicitudin tempor id eu nisl nunc mi." ISBNtext=""/>
+      
 
       <StatusBar style="auto" />
     </View>
@@ -20,7 +20,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#B7E9F7',
+    backgroundColor: '#fff',
     //alignItems: 'center',
     //justifyContent: 'center',
   },
@@ -31,10 +31,11 @@ const styles = StyleSheet.create({
     flexGrow: 0,
     flexShrink: 0,
     justifyContent: 'space-evenly',
-    
-    backgroundColor: "#fff",
+
+    backgroundColor: '#B7E9F7',
+    backgroundColor: "",
     alignItems: 'center',
     justifyContent: 'center',
-    maxHeight: '50px',
+    //maxHeight: '50px',
   },
 });

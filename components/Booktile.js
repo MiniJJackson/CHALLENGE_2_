@@ -32,11 +32,11 @@ const styles = StyleSheet.create({
       marginVertical: '2%',
   
     },
-    tileImage: {
+    /*tileImage: {
       width: '100%',
       maxHeight: 110,
       overflow: 'hidden',
-    },
+    },*/
     tileDetail: {
       padding: 10,
     },
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
       fontSize: 22,
       fontWeight: '600',
     },
-    tileText: {
+    tileSub: {
       fontSize: 16,
       fontWeight: '500',
     }
