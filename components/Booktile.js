@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TouchableNativeFeedback } from 'react-native';
+import { StyleSheet, Text, View,Image, TouchableNativeFeedback } from 'react-native';
 
 // component aanmaken ipv alles voluit te schrijven
 const Booktile = props => {
@@ -24,20 +24,15 @@ const Booktile = props => {
 export default Booktile;
 
 const styles = StyleSheet.create({
-  tile: {
-    flexBasis: '46%',//200
+  Booktile: {
     borderRadius: 5,
     borderColor: '#B4B8DA',
     borderWidth: 1,
     borderStyle: 'solid',
     marginVertical: '2%',
+    margin: 20,
 
   },
-  /*tileImage: {
-    width: '100%',
-    maxHeight: 110,
-    overflow: 'hidden',
-  },*/
   tileDetail: {
     padding: 10,
   },

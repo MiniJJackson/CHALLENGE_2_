@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 import Booktile from './components/Booktile.js';
 
 export default function App() {
@@ -9,9 +9,9 @@ export default function App() {
         <Text>Bookshop</Text>
         <Text>Bookshop</Text>
         <Image
-          style={styles.tileImage}
-          source={require('../assets/courseImages/macbook-code.jpg')}
-        />
+        style={styles.cartIcon}
+        source={require('../CHALLENGE_1/assets/cart/cartIcon.png')}
+      />
       </View>
       <Booktile title="Book title 1" Subtitle="by Lorem Lorem It" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." ISBNtext="ISBN 978-8-2514-5842-1" />
 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
   headingTitle: {
 
-    marginTop: '40',
+    marginTop: 40,
     flexDirection: 'row',
 
     backgroundColor: '#B7E9F7',
@@ -45,9 +45,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     //maxHeight: '50px',
   },
-  tileImage: {
+  cartIcon: {
     width: '100%',
-    maxHeight: 110,
+    maxHeight: 40,
+  resizeMode: 'contain',
     overflow: 'hidden',
   }
 });
