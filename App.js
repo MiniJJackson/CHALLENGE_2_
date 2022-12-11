@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Booktile from './components/Booktile.js';
+import CartIcon from './components/CartIcon.js';
 
 export default function App() {
   return (
@@ -8,7 +9,7 @@ export default function App() {
       <View style={styles.headingTitle}>
         <Text>Bookshop</Text>
         <Text>Bookshop</Text>
-        <Image style={styles.tinyLogo} source={require('../CHALLENGE_1/assets/3144456.png')} />
+      
       </View>
       <Booktile title="Book title 1" Subtitle="by Lorem Lorem It" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." ISBNtext="ISBN 978-8-2514-5842-1" />
 
