@@ -10,7 +10,7 @@ export default function App() {
         <Text>Bookshop</Text>
         <Image
           style={styles.tileImage}
-          source={require('../assets/cart/cartIcon.png')}
+          source={require('../assets/courseImages/macbook-code.jpg')}
         />
       </View>
       <Booktile title="Book title 1" Subtitle="by Lorem Lorem It" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." ISBNtext="ISBN 978-8-2514-5842-1" />
@@ -45,4 +45,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     //maxHeight: '50px',
   },
+  tileImage: {
+    width: '100%',
+    maxHeight: 110,
+    overflow: 'hidden',
+  }
 });
