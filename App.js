@@ -9,7 +9,10 @@ export default function App() {
       <View style={styles.headingTitle}>
         <Text>Bookshop</Text>
         <Text>Bookshop</Text>
-      
+        <Image
+          style={styles.tileImage}
+          source={require('../assets/courseImages/macbook-code.jpg')}
+        />
       </View>
       <Booktile title="Book title 1" Subtitle="by Lorem Lorem It" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." ISBNtext="ISBN 978-8-2514-5842-1" />
 
