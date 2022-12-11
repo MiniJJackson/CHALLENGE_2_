@@ -6,12 +6,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.headingTitle}>
-        <Text>Bookshop</Text>
-        <Text>Bookshop</Text>
+        <Text style={styles.bookshop}>Bookshop</Text>
         <Image
-        style={styles.cartIcon}
-        source={require('../CHALLENGE_1/assets/cart/cartIcon.png')}
-      />
+          style={styles.cartIcon}
+          source={require('../CHALLENGE_1/assets/cart/cartIcon.png')}
+        />
       </View>
       <Booktile title="Book title 1" Subtitle="by Lorem Lorem It" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." ISBNtext="ISBN 978-8-2514-5842-1" />
 
@@ -29,26 +28,30 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+  
     backgroundColor: '#fff',
-    //alignItems: 'center',
-    //justifyContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
+
   headingTitle: {
-
-    marginTop: 40,
+    marginTop: 60,
+    
     flexDirection: 'row',
-
-    backgroundColor: '#B7E9F7',
-    backgroundColor: "",
+    /* backgroundColor: '#B7E9F7',*/
+    maxWidth: 260,
+    paddingLeft: 70,
     alignItems: 'center',
     justifyContent: 'center',
     //maxHeight: '50px',
   },
+  bookshop: {
+    fontSize: 48,
+    fontWeight: '400',
+  },
   cartIcon: {
     width: '100%',
     maxHeight: 40,
-  resizeMode: 'contain',
-    overflow: 'hidden',
+    resizeMode: 'contain',
   }
 });

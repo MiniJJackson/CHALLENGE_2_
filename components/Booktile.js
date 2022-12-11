@@ -9,12 +9,15 @@ const Booktile = props => {
         <Text style={styles.tileSub}>{props.Subtitle}</Text>
         <Text style={styles.tileText}>{props.Texttitle}</Text>
 
+        <View style={styles.flexRead}> 
         <Text style={styles.tileISBN}>{props.ISBNtext}</Text>
         <TouchableNativeFeedback>
           <View>
             <Text style={styles.button}>READ</Text>
           </View>
         </TouchableNativeFeedback>
+        </View>
+        
       </View>
     </View>
   )
@@ -30,8 +33,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderStyle: 'solid',
     marginVertical: '2%',
-    margin: 20,
-
+    margin: 10,
+    marginBottom: 40,
   },
   tileDetail: {
     padding: 10,
@@ -51,5 +54,11 @@ const styles = StyleSheet.create({
   tileISBN: {
     fontSize: 18,
     fontWeight: '300',
+  },
+  flexRead:{
+    
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
   }
 });
