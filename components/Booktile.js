@@ -47,5 +47,13 @@ const styles = StyleSheet.create({
     tileSub: {
       fontSize: 16,
       fontWeight: '500',
+    },
+    tileText: {
+      fontSize: 16,
+      fontWeight: '500',
+    },
+    tileISBN:{
+      fontSize: 18,
+      fontWeight: '300',
     }
   });

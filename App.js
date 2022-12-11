@@ -9,7 +9,11 @@ export default function App() {
         <Text>Bookshop</Text>
         <Text>CART</Text>
       </View>
-      <Booktile title="Book title 1" Subtitle="by Lorem Lorem It" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam vestibulum morbi blandit cursus risus at. Leo a diam sollicitudin tempor id eu nisl nunc mi." ISBNtext=""/>
+      <Booktile title="Book title 1" Subtitle="by Lorem Lorem It" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam vestibulum morbi blandit cursus risus at. Leo a diam sollicitudin tempor id eu nisl nunc mi." ISBNtext="ISBN 978-8-2514-5842-1"/>
+
+      <Booktile title="Book title 2" Subtitle="by Lorem Dolor Em" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam vestibulum morbi blandit cursus risus at. Leo a diam sollicitudin tempor id eu nisl nunc mi." ISBNtext="ISBN 145-1-2514-4125-6"/>
+
+      <Booktile title="Book title 3" Subtitle="by Lorem Dolor Em" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam vestibulum morbi blandit cursus risus at. Leo a diam sollicitudin tempor id eu nisl nunc mi." ISBNtext="ISBN 145-1-2514-9125-4"/>
       
 
       <StatusBar style="auto" />
