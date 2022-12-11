@@ -8,6 +8,7 @@ const Booktile = props => {
                 <Text style={styles.tileHeader}>{props.title}</Text>
                 <Text style={styles.tileSub}>{props.Subtitle}</Text>
                 <Text style={styles.tileText}>{props.Texttitle}</Text>
+                
                 <Text style={styles.tileISBN}>{props.ISBNtext}</Text>
                     <TouchableNativeFeedback>
                         <View>

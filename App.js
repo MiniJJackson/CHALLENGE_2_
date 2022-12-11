@@ -6,11 +6,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.headingTitle}>
-        <Text>Bookshop</Text>
-        <Text>Bookshop</Text>
-        <Text>Bookshop</Text>
-        <Text>Bookshop</Text>
-        <Text>Bookshop</Text>
+        <Text style={{ flex: 1 }}>Bookshop</Text>
+        <Text style={{ flex: 2 }}>Bookshop</Text>
         <Text>CART</Text>
       </View>
       <Booktile title="Book title 1" Subtitle="by Lorem Lorem It" Texttitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." ISBNtext="ISBN 978-8-2514-5842-1"/>
@@ -35,12 +32,9 @@ const styles = StyleSheet.create({
     //justifyContent: 'center',
   },
   headingTitle: {
-    flex: 1,
+
+    marginTop: '40',
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    flexGrow: 0,
-    flexShrink: 0,
-    justifyContent: 'space-evenly',
 
     backgroundColor: '#B7E9F7',
     backgroundColor: "",
