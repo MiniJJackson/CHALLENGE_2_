@@ -2,14 +2,18 @@ import { StyleSheet, Text, View, Image, TouchableNativeFeedback } from 'react-na
 
 // component aanmaken ipv alles voluit te schrijven
 const Booktile = props => {
+
+
+  
   return (
     <View style={styles.Booktile}>
       <View style={styles.tileDetail}>
-        <TouchableNativeFeedback>
+        <TouchableNativeFeedback onPress={onPressRead}>
           <View>
             <Text style={styles.tileHeader}>{props.title}</Text>
           </View>
         </TouchableNativeFeedback>
+
         <Text style={styles.tileSub}>{props.Subtitle}</Text>
         <Text style={styles.tileText}>{props.Texttitle}</Text>
 
