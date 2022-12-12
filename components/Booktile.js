@@ -1,23 +1,28 @@
-import { StyleSheet, Text, View,Image, TouchableNativeFeedback } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableNativeFeedback } from 'react-native';
 
 // component aanmaken ipv alles voluit te schrijven
 const Booktile = props => {
   return (
     <View style={styles.Booktile}>
       <View style={styles.tileDetail}>
-        <Text style={styles.tileHeader}>{props.title}</Text>
+        <TouchableNativeFeedback>
+          <View>
+            <Text style={styles.tileHeader}>{props.title}</Text>
+          </View>
+        </TouchableNativeFeedback>
         <Text style={styles.tileSub}>{props.Subtitle}</Text>
         <Text style={styles.tileText}>{props.Texttitle}</Text>
 
-        <View style={styles.flexRead}> 
-        <Text style={styles.tileISBN}>{props.ISBNtext}</Text>
-        <TouchableNativeFeedback>
-          <View>
-            <Text style={styles.button}>READ</Text>
-          </View>
-        </TouchableNativeFeedback>
+        <View style={styles.flexRead}>
+          <Text style={styles.tileISBN}>{props.ISBNtext}</Text>
+          <TouchableNativeFeedback>
+            <View>
+              <Text style={styles.button}>READ</Text>
+              {console.log('Book read')}
+            </View>
+          </TouchableNativeFeedback>
         </View>
-        
+
       </View>
     </View>
   )
@@ -55,10 +60,17 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '300',
   },
-  flexRead:{
-    
+  flexRead: {
+    paddingTop: 10,
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-evenly',
+  },
+  button: {
+    borderRadius: 5,
+    borderColor: '#B4B8DA',
+    borderWidth: 1,
+    borderStyle: 'solid',
+    padding: 5,
   }
 });
